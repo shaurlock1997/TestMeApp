@@ -5,14 +5,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"C:\\Shaurya\\shaureclipse\\oct23shaur2team5\\src\\test\\resources\\features\\demo.feature"}, 
+@CucumberOptions(plugin= {"json:target/cucumber.json"},features = {"C:\\Shaurya\\git\\oct23shaur2team5\\src\\test\\resources\\features\\demo.feature"}, 
 				glue= {"steps"},
 				monochrome=true,
-				dryRun=true)
+				dryRun=false)
 public class test_1 {
 	@Test
 	public void test()  {
-		//System.out.print("hi");
 	}
 
 }
